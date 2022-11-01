@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 4</title>
+    <style>
+        /* div{
+            background-color: burlywood;
+            width: 50rem;
+            height: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        } */
+        .container{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: burlywood;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 20px;
+            width: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .utama{
+            background-color: bisque;
+            padding: 20px;
+            width: 30rem;
+            margin-bottom: 10px;
+            
+        }
+        .satu{
+            background-color: bisque;
+            padding: 20px;
+            width: 30rem;
+            margin-bottom: 10px;
+            
+        }
+        .dua{
+            background-color: bisque;
+            width: 30rem;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tiga{
+            background-color: bisque;
+            width: 30rem;
+            padding: 20px;
+            margin-bottom: 10px;
+
+        }
+
+        .empat{
+            background-color: bisque;
+            width: 30rem;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Tugas Mandiri 4</h1>
+            <div class="utama">
+                <span>Text Default</span>
+                <h1 id="default" ></h1>
+            </div>
+
+            <div class="satu">
+                <span>Merubah variabel text menjadi uppercase</span>
+                <h1 id="ha1" ></h1>
+            </div>    
+
+            <div class="dua">
+                <span>Merubah variable text menjadi lowercase</span>
+                <h1 id="ha2" ></h1>
+            </div>
+
+            <div class="tiga">
+                <span>Merubah isi variable text yang <br> awalnya "Merah putih" menjadi "Merah Muda"</span>
+                <h1 id="ha3" ></h1>
+            </div>
+
+            <div class="empat">
+                <span>Panjang variable teks </span>
+                <h1 id="pjngstr"></h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let str = document.getElementById("default")
+    let str1 = document.getElementById("ha1")
+    let str2 = document.getElementById("ha2")
+    let str3 = document.getElementById("ha3")
+    let str4 = document.getElementById("pjngstr")
+
+    let text = "Merah Putih"
+    str.innerText = text
+
+    //mengubah variable text menjadi uppercase
+    let ubahuppercase = text.toUpperCase()
+    str1.innerText = ubahuppercase
+
+    //mengubat variable text menjadi lowercase
+    let ubahlowercase = text.toLowerCase()
+    str2.innerText = ubahlowercase
+
+    //mengubat isi variable text yang awalnya "Merah putih" menjadi "Merah Muda"
+    let gantitext = text.replace("Putih", "Muda")
+    str3.innerText = gantitext
+
+    let panjangstr = gantitext.length
+    str4.innerText = panjangstr
+
+</script>
+</html>
